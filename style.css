@@ -1,0 +1,75 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3d; /* Fond bleu foncé */
+    color: white;
+}
+
+/* Logo */
+header .logo {
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo img {
+    width: 150px; /* Ajuste la taille du logo selon tes besoins */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Onglet actif */
+nav ul li a:hover {
+    background-color: yellow; /* Onglets deviennent jaunes au survol */
+    color: black;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: transparent;
+}
+
+section#home {
+    text-align: center;
+}
+
+section#home h1 {
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Style des onglets sélectionnés */
+nav ul li a.active {
+    background-color: yellow;
+    color: black;
+}

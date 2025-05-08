@@ -1,0 +1,19 @@
+{
+  "name": "cryptage-project",
+  "version": "1.0.0",
+  "description": "Projet de cryptage avec Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "keywords": [
+    "cryptage",
+    "nodejs",
+    "serveur"
+  ],
+  "author": "Ton Nom",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.0.0"
+  }
+}
