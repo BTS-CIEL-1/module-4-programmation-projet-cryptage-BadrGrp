@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="windows.css">
+
+  <meta charset="UTF-8">
+  <title>Robuste Cryptage</title>
+<nav class="menu-gauche">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="Robuste.html">Robuste</a></li>
+      <li><a href="Renforce.html">Renforcé</a></li>
+      <li><a href="Avance.html">Avancé</a></li>
+    </ul>
+
+ <div class="logo-container">
+    <img src="ciel.png" alt="Logo" class="logo-menu" />
+  </div>
+
+
+
+  <ul class="bas">
+    <li><a href="#">À propos</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+</head>
+<div id="window-controls">
+  <button id="minimize">–</button>
+  <button id="close">×</button>
+</div>
+<body>
+    <h2>Robuste</h2>
+    <h1>Cryptage</h1>
+    <p>Le chiffrement César est une méthode de cryptage symétrique très ancienne, utilisée par Jules César. Il consiste à décaler chaque lettre du message d’un certain nombre de positions dans l’alphabet.</p>
+  
+    <input type="text" id="textInput" placeholder="Entrer votre texte à crypter">
+    <input type="number" id="shiftInput" placeholder="Décalage (ex : 3)">
+    <input type="email" id="emailInput" placeholder="Insérer email">
+    <input type="text" id="resultat" readonly placeholder="Résultat du cryptage">  
+
+    <div class="boutons-ligne">
+      <button class="btn-style" onclick="crypter()">Chiffrer</button>
+      <button class="btn-style" onclick="dechiffrer()">Dechiffrer</button>
+      <button class="btn-style" onclick="inserer()">Insérer</button>
+      <button class="btn-style" onclick="envoyer()">Send</button>
+    </div>
+    
+  
+    <script src="renderer.js"></script>
+    <script src="windows.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<head>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="windows.css">
+<nav class="menu-gauche">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="Robuste.html">Robuste</a></li>
+      <li><a href="Renforce.html">Renforcé</a></li>
+      <li><a href="Avance.html">Avancé</a></li>
+    </ul>
+
+ <div class="logo-container">
+    <img src="ciel.png" alt="Logo" class="logo-menu" />
+  </div>
+
+
+
+  <ul class="bas">
+    <li><a href="#">À propos</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+  </head>
+
+<div id="window-controls">
+  <button id="minimize">–</button>
+  <button id="close">×</button>
+</div>
+
+
+<body>
+    <h2>Robuste</h2>
+    <h1>Cryptage</h1>
+    <p>Le chiffrement symétrique est une méthode de cryptage où la même clé est utilisée pour chiffrer et déchiffrer un message.</p>
+  
+    <input type="text" id="textInput" placeholder="Entrer votre texte à crypter">
+    <input type="text" id="textInput2" placeholder="Entrer votre clé">
+    <input type="text" id="resultat" readonly placeholder="Résultat du cryptage"> 
+
+    <input type="email" id="emailInput" placeholder="Insérer email">
+    <div class="boutons-ligne">
+      <button class="btn-style" onclick="symetrique()">Chiffrer</button>
+      <button class="btn-style" onclick="dechiffrerSymetrique()">Dechiffrer</button>
+      <button class="btn-style" onclick="inserer()">Insérer</button>
+      <button class="btn-style" onclick="envoyer()">Send</button>
+    </div>
+  
+    <script src="renderer.js"></script>
+    <script src="windows.js"></script>
+  </body>
