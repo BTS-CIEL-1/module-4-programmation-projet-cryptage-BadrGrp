@@ -89,7 +89,7 @@ Pour toute information relative à cet appel d'offres, veuillez contacter :
   *  lancer cmd dans le dossier
   *   entrer npm start
 
-##build le Setup
+## build le Setup
   * lancer cmd
   * entrer npm run build
 
