@@ -90,7 +90,7 @@ Pour toute information relative à cet appel d'offres, veuillez contacter :
   *  entrer npm install
   *  entrer npm start
 
-## build le Setup
+# build le Setup
   * lancer cmd
   * entrer npm install
   * entrer npm run build
