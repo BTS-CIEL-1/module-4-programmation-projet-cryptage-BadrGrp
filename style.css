@@ -1,0 +1,210 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+margin: 0;
+padding: 0;
+margin-left: 45px; /* ajuste selon la largeur du menu */
+width: 100%;
+height: 100%;
+border-radius: 20px;
+overflow: hidden;
+background-color: transparent;
+display: flex; 
+flex-direction: column;
+justify-content: center; 
+align-items: center; 
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 20px;
+  background: linear-gradient(rgba(55, 50, 194, 0.6), rgba(55, 50, 194, 0.6)),
+              url('https://www.bream-laanaia.com/wp-content/uploads/2023/07/9_Embedded-Cryptography-Software-Engineer-768x512.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+}
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+}
+
+h2 {
+  font-size: 28px;
+  color: #feca57;
+  margin: 0;
+}
+
+p {
+  width: 60%;
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+input , textarea {
+  width: 350px;
+  padding: 14px 18px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid #feca57;
+  background: transparent;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+
+
+#resultat {
+  font-weight: bold;
+  font-size: 18px;
+  color: #00d2ff;
+  margin-top: 10px;
+}
+
+/* Coins arrondis pour les éléments de formulaire */
+input, button, textarea {
+  border-radius: 12px;
+}
+
+
+@media (max-width: 600px) {
+  input, button, textarea {
+    width: 90%;
+  }
+  p {
+    width: 80%;
+  }
+}
+
+.menu-gauche {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 100vh;
+  background: rgba(11, 11, 13, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* <-- Cette ligne est cruciale */
+  align-items: center;
+  padding: 40px 0;
+  border-right: 2px solid #0B0B0D;
+  z-index: 1000;
+  border-radius: 20px 0 0 20px;
+}
+
+
+.menu-gauche ul {
+list-style: none;
+padding: 0;
+width: 100%;
+text-align: center;
+}
+
+.menu-gauche li {
+margin: 20px 0;
+}
+
+.menu-gauche li:first-child {
+  margin-top: 15px;
+}
+
+.bas {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+
+}
+.menu-gauche a {
+color: #feca57;
+text-decoration: none;
+font-size: 18px;
+transition: color 0.3s;
+}
+
+.menu-gauche a:hover {
+color: #0B0B0D;
+}
+.logo-menu {
+  width: 125px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-top: 70px;
+}
+
+.boutons-ligne {
+  display: flex;
+  justify-content: flex-end; /* alignement à gauche */
+  gap: 4px;                     /* boutons rapprochés */
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.btn-style {
+  flex: 1;
+  min-width: 100px; /* Réduit la largeur minimale */
+  max-width: 140px;
+  text-align: center;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #feca57;
+  padding: 6px 12px; /* Réduit la taille intérieure */
+  font-size: 14px;   /* Texte plus petit */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-style:hover {
+  background-color: #feca57;
+  color: #000;
+  transform: scale(1.05);
+}
+.content {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.contact-block {
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.contact-block h3 {
+  margin-top: 0;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#message, #erreur {
+  color: #007bff ;
+}

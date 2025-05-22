@@ -1,0 +1,58 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="windows.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+
+  <meta charset="UTF-8">
+  <title>Avancé Cryptage</title>
+  <nav class="menu-gauche">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="Robuste.html">Robuste</a></li>
+      <li><a href="Renforce.html">Renforcé</a></li>
+      <li><a href="Avance.html">Avancé</a></li>
+    </ul>
+
+    <div class="logo-container">
+      <img src="ciel.png" alt="Logo" class="logo-menu" />
+    </div>
+
+    <ul class="bas">
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</head>
+<div id="window-controls">
+  <button id="minimize">–</button>
+  <button id="close">×</button>
+</div>
+
+<body>
+    <h2>Avancé</h2>
+    <h1>Cryptage</h1>
+    <p>Système utilisant une paire de clés : une publique pour chiffrer, une privée pour déchiffrer. Très fiable pour l’échange sécurisé de données, notamment par email.</p>
+  
+    <input type="text" id="textInput" placeholder="Votre message">
+    <textarea id="clePublique" placeholder="Collez votre clé publique RSA ici..." rows="6" cols="20"></textarea>
+    <textarea id="clePrivee" placeholder="Collez votre clé privée RSA ici..." rows="6" cols="20"></textarea>    
+    <input type="email" id="emailInput" placeholder="Insérer email">
+    <input type="text" id="resultat" placeholder="Résultat">
+
+        <div class="boutons-ligne">
+      <button class="btn-style" onclick="genererCles()">Clé</button>
+      <button class="btn-style" onclick="chiffrer()">chiffrer</button>
+      <button class="btn-style" onclick="dechiffrer()">Dechiffrer</button>
+      <button class="btn-style" onclick="inserer()">Insérer</button>
+      <button class="btn-style" onclick="envoyer()">Send</button>
+    </div>
+    <div id="message"></div>
+    <div id="erreur"></div>
+    
+    <script src="renderer.js"></script>
+    <script src="windows.js"></script>
+
+
+    
+    
+  </body>

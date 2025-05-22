@@ -1,0 +1,24 @@
+directories:
+  output: dist
+  buildResources: assets
+appId: com.CIELSECURE.app
+productName: CIELSECURE
+icon: icon.ico
+files:
+  - filter:
+      - '**/*'
+win:
+  target: nsis
+linux:
+  target:
+    - AppImage
+    - deb
+  category: Utility
+nsis:
+  oneClick: false
+  perMachine: true
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: CryptageApp
+electronVersion: 28.3.3

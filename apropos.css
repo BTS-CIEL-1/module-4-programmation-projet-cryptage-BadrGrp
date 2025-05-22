@@ -1,0 +1,27 @@
+
+
+main {
+  margin-top: 60px;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+main p {
+  color: #ccc;
+  font-size: 15px;
+  width: 75%;
+  margin: 15px auto;
+  line-height: 1.6;
+}
+
+main p:last-child {
+  color: #feca57;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 40px;
+}
