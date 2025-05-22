@@ -81,6 +81,23 @@ Pour toute information relative à cet appel d'offres, veuillez contacter :
 3. Fonction: Équipe technique
     * Nom: Djamel BENNOUR
     * Email: technique.ciel@lycee-jeanrostand.fr
+  
+
+
+  ## 6. Installer localement 
+  *  Unzip
+  *  lancer cmd dans le dossier
+  *   entrer npm start
+
+##build le Setup
+  * lancer cmd
+  * entrer npm run build
+
+    
+    
+  
+
+  
 
 
 
