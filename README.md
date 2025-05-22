@@ -87,7 +87,8 @@ Pour toute information relative à cet appel d'offres, veuillez contacter :
   ## 6. Installer localement 
   *  Unzip
   *  lancer cmd dans le dossier
-  *   entrer npm start
+  *  entrer npm install
+  *  entrer npm start
 
 ## build le Setup
   * lancer cmd
