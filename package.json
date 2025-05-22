@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Application de cryptage sécurisé",
   "main": "main.js",
-  "author": "Votre Nom",
+  "author": "CIELTECH",
   "license": "MIT",
   "scripts": {
     "start": "electron .",
